@@ -85,7 +85,7 @@ export default function PropertyFishHomeV3() {
     <div className="tile" role="button" tabIndex={0}
       onClick={() => console.log("pill_click", { label })}
       onKeyDown={(e)=>{ if(e.key==='Enter') console.log('pill_click', {label}); }}>
-      {label} →
+      {label} &rarr;
     </div>
   );
 
@@ -153,7 +153,7 @@ export default function PropertyFishHomeV3() {
           <div className="grid" id="grid-apartments">
             {Array.from({ length: 8 }).map((_, i) => <Card key={`apt-${i}` } title={i % 2 ? "3 BHK" : "2/3 BHK"} sub={aptSubs[i % aptSubs.length]} />)}
           </div>
-          <a className="cta" href="#all-apartments" id="cta-apartments">See all apartments →</a>
+          <a className="cta" href="#all-apartments" id="cta-apartments">See all apartments &rarr;</a>
         </section>
 
         <section id="plots" className="section">
@@ -162,7 +162,7 @@ export default function PropertyFishHomeV3() {
           <div className="grid" id="grid-plots">
             {Array.from({ length: 8 }).map((_, i) => <Card key={`plot-${i}` } title="Residential Plot" sub={plotSubs[i % plotSubs.length]} />)}
           </div>
-          <a className="cta" href="#all-plots" id="cta-plots">Explore plots →</a>
+          <a className="cta" href="#all-plots" id="cta-plots">Explore plots &rarr;</a>
         </section>
 
         <section id="villas" className="section">
@@ -171,7 +171,7 @@ export default function PropertyFishHomeV3() {
           <div className="grid" id="grid-villas">
             {Array.from({ length: 8 }).map((_, i) => <Card key={`villa-${i}` } title="3/4 BHK Villa" sub={villaSubs[i % villaSubs.length]} />)}
           </div>
-          <a className="cta" href="#all-villas" id="cta-villas">See premium homes →</a>
+          <a className="cta" href="#all-villas" id="cta-villas">See premium homes &rarr;</a>
         </section>
 
         <section id="owners" className="section">
@@ -179,7 +179,7 @@ export default function PropertyFishHomeV3() {
           <div className="strip" id="strip-owners">
             {Array.from({ length: 8 }).map((_, i) => <Pill key={`owner-${i}` } label={owners[i % owners.length]} />)}
           </div>
-          <a className="cta" href="#owner-listings" id="cta-owners">View all owner listings →</a>
+          <a className="cta" href="#owner-listings" id="cta-owners">View all owner listings &rarr;</a>
         </section>
 
         <section id="new-projects" className="section">
@@ -203,7 +203,7 @@ export default function PropertyFishHomeV3() {
               <div key={loc} className="tile" role="button" tabIndex={0}
                 onClick={() => console.log("locality_click", { locality: loc })}
                 onKeyDown={(e)=>{ if(e.key==='Enter') console.log('locality_click', {locality: loc}); }}>
-                {loc} →
+                {loc} &rarr;
               </div>
             ))}
           </div>
@@ -216,7 +216,7 @@ export default function PropertyFishHomeV3() {
             <h2 style={{ margin: 0, marginBottom: 6 }}>List your property on PropertyFish</h2>
             <p style={{ margin: 0, color: "#9ca3af" }}>Owners • Agents • Builders — get verified badges and more visibility.</p>
           </div>
-          <a className="cta" href="#list">Start listing →</a>
+          <a className="cta" href="#list">Start listing &rarr;</a>
         </div>
       </footer>
     </div>
